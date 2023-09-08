@@ -2,15 +2,13 @@
 	<div>
 		<form @submit.prevent>
 			<h2>Create posts</h2>
-			<input
+			<my-input
 				v-model="post.title"
-				class="input"
 				type="text"
 				placeholder="Post name"
 			/>
-			<input
+			<my-input
 				v-model="post.body"
-				class="input"
 				type="text"
 				placeholder="Post description"
 			/>
@@ -50,11 +48,5 @@ form {
 	flex-direction: column;
 	border-radius: 5px;
 	margin-top: 15px;
-}
-.input {
-	width: 100%;
-	border: 1px solid rgb(6, 159, 255);
-	padding: 5px;
-	margin-top: 10px;
 }
 </style>
